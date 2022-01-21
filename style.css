@@ -1,0 +1,263 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  /* -webkit-box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #1f2229;
+}
+
+.iqDev {
+  display: flex;
+  height: 44px;
+  width: 800px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.iqDev__description {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.iqDev__logo {
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAYCAYAAACPxmHVAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAScSURBVHgB7VlrbE1ZFF73qjbTyTSTpp12akZlMpGZMTNmvFKvIEI8UhJC4o/yA1E/JBIl4vFDJIIEP0gQXH4IEeKRIv4I4pF4BI16hHpF69W0pIh7udu3nHXc3eM87jmu45F+yZe9z9prrb32uvvstU9LFCKUUtPA5+A6sD2FDMzZCdwr/JG+JWBBV5SBONiBQgbm7KVSKKFPjCiFixj4CjwI1lMbMgvsmBz6TAh752Z5KSCIX9D8TunhQiQSaXbx1YV9oW2C3jGb8f5oBoNFYA14AHq3IR+APp+Rl/F8g7xjzkYzHuwhopPg4TTsitGMBjlOBZ5gO3NNsjGGiXoN5HU2Prqh+ZWMN9R1sv/AhEofpR7+VojeGYu8I1ht4+8pOBO8Kc9V5J2gQWCtja9b4GTlsHPxPE8ZxdYK/nFHik4WeEfku23mjoA1Mn7ALcgO4D3lD76Ti/73WkDmYvaAx5RR+JLgGxmr8vDfG2zSfJ0G94FX5fmFNlai2S3U5NfBGLjdsv7eortAnjm2PMv8/TT9IU5BfqcF5AdBklup2c8FI9rYH+ATbdwruSdFr14Zr6c+Nlu13pklIudj6rXIVivtioh+ruazVmS86ZIim2GZY73I+U3LcQpyvQoGX8lVxmt0UWQ7HWyGaoupcvHdU9Mb46CzRn2YXHMnPrZLCGSdNZtuIjOPsFOaXo4y3jrGcpZl2Tibh2YKhQMuIH9Kv9pBhwvfA/BncgcXL971LeBRBx2+AlZaZD2l5Vwcwvrt7JT4/hs8D24ER4Bl0O+IwnaXjEJcKrpbTYcpD0qVo1lE4YGrejvuxOPxFgcdrrpx8kY7aV+66Dc7xMDg28hAcof5XbBPfLFNBbgYnCpjx5HsGl353fmGZoM2WRhoBB9xJzs7+x8Hnc7kvWsZ96UtcNHvZSOrlfYa2NWD+1kRyXuNZpPYTULuCin1w2xo5R2DBSpYAbMiSEHbIrImO3vItmn+3c7cH+TcZOzgZ8s4X/fqNF/mmTtWk4228ct2ZTbyvzQ78yxvBAt0Jb67HVGZQZDkdlGp6xMHx1V9GDgBPG7x73VbmKnpXgbHgSPAWSp1PzVhJpeL6gWR8fVqPjhAGV9zfJOpl7GVNvOds/iMWRWWq8wh6EfERPCZg88T4EPpp/MRsdYlPv1DRb/nlirjfuuEFrCrzVyVFr0++jgXNL7XxZyCRaEZmEwmO5EHotFoM87NZg+16+Ahad8DZ9hWBHYa3RVgXzAf5Aq8GVwFngN/ojQAX5XiazrYnYw18vMa8CKl6swrzYZ39b/ozgX5a+x/Mgokn+O7wKXQabCZjm8F5dK/B55qFQt5oKGhIYbEVXio8Ss4qri4uI4yAPhqj8UktOebaH4D50C+zIefd4mETZJ8QOyiUrgCw/MPN2kEUp2bm1uRl5fXSBmCntiP9OMrqRa7QLY6Piq5SOySoqKiBQhGURs+QNDkJpDQqUhsjNrgiCDJfYIzeHhhYeFZCg/9yChEz+grgq/k4hi4hBtBeX5+/l0KEQ6V+otH2v9DwwK3JBKJsrAT+zXDc+ciqXy5n4XzdSW1wRfeApJf2RBYFhcTAAAAAElFTkSuQmCC");
+  width: 87px;
+  height: 23.94px;
+  position: relative;
+
+  left: -25px;
+  /* object-fit: contain; */
+}
+
+.calculator {
+  background-color: #faf6f6;
+  width: 800px;
+  height: 762px;
+  margin: 0 auto;
+}
+
+.calculator__form {
+  width: 566px;
+  margin: 0 auto;
+}
+
+.calculator__title {
+  padding-top: 41px;
+  padding-bottom: 30px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #1f2229;
+}
+
+.calculator__description {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f2229;
+  text-align: center;
+  padding-bottom: 72px;
+}
+
+.calculator__form-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calculator__form-field {
+  height: 89px;
+  position: relative;
+}
+
+.calculator__form-field:last-child {
+  height: 79px;
+}
+
+input {
+  width: 242px;
+  height: 52px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-family: Roboto;
+  padding: 23px 18px 0 24px;
+}
+
+input:focus {
+  border: 1px solid #33c4a0;
+  outline: none;
+}
+
+/* hidden arows input for number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculator__form-field__checkBox > input {
+  position: relative;
+  top: 11px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.calculator__form-field__checkBox > label {
+  position: relative;
+  top: 4px;
+  left: 15px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+
+  color: #000000;
+}
+
+.calculator__form-period {
+  position: relative;
+  display: block;
+  width: 242px;
+  height: 52px;
+}
+
+input[name="term"] {
+  margin: 0 -5px 0 0;
+  width: 172px;
+}
+
+select[name="period"] {
+  position: absolute;
+  top: 0px;
+  left: 171px;
+  margin: 0;
+  width: 71px;
+  height: 52px;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+select[name="period"]:hover {
+  border: 1px solid #33c4a0;
+}
+
+input[type="submit"] {
+  width: 172px;
+  background-color: #33c4a0;
+  border: 1px solid #33c4a0;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 19px 53px;
+}
+
+input[type="submit"]:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #279277;
+  cursor: pointer;
+}
+
+.calculator__amountPaid-title {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1f2229;
+  padding-left: 15px;
+  margin-top: 26px;
+  margin-bottom: 12px;
+}
+
+.calculator__amountPaid-value {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #000000;
+  padding-left: 53px;
+}
+
+.calculator__amountPaid-value::before {
+  content: "₽ ";
+}
+
+.calculator__result {
+  display: none;
+}
+
+.help-inline {
+  /* Validation form jquery validation plugin */
+  display: block;
+  color: #ff5a5f;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  border-color: #ff5a5f;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.help-inline:focus {
+  border-color: #ff5a5f;
+}
+
+.calculator__placeholder {
+  position: absolute;
+  top: 19px;
+  left: 18px;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.label__percent {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+input:focus ~ .calculator__placeholder {
+  position: absolute;
+  top: 8px;
+  left: 17px;
+}
+
+input:focus ~ .label__percent {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+
+input[name="percent"]:focus {
+  padding: 17px 7px 0 24px;
+}
+
+/* if input ented value */
+input:valid ~ .calculator__placeholder {
+  position: absolute;
+  top: 8px;
+  left: 17px;
+}

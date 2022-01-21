@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="#">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- embed packages -->
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Air datepicker -->
+    <link href="./assets/Air-datepicker/air-datepicker.css" rel="stylesheet" type="text/css">
+    <script src="./assets/Air-datepicker/air-datepicker.js"></script>
+
+    <!-- jquery -->
+    <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery validation plugin -->
+    <script src="./assets/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <div class="iqDev">
+                <img alt="" class="iqDev__logo">
+                <div class="iqDev__description">Deposit Calculator</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__title">Депозитный калькулятор</div>
+                <div class="calculator__description">Калькулятор депозитов позволяет рассчитать ваши доходы после
+                    внесения суммы на счет в банке по опредленному тарифу.</div>
+                <div class="calculator__form">
+                    <form id="form_1" class="calculator__form-items">
+                        <div class="calculator__form-field">
+                            <input name="startDate" id="startDate" type="text" class='datepicker-here' required>
+                            <span class="help-inline">&nbsp;</span>
+                            <label for="startDate" class="calculator__placeholder">Дата открытия</label>
+                        </div>
+                        <div class="calculator__form-field">
+                            <div class="calculator__form-period">
+                                <input name="term" id="term" type="number" class="input__term" required>
+                                <select name="period" id="period-select">
+                                    <option value="месяц">месяц</option>
+                                    <option value="год">год</option>
+                                </select>
+                                <span class="help-inline">&nbsp;</span>
+                                <label for="term" class="calculator__placeholder">Срок вклада</label>
+                            </div>
+                        </div>
+                        <div class="calculator__form-field">
+                            <input name="sum" id="sum" type="number" class="calculator__input" required>
+                            <span class="help-inline">&nbsp;</span>
+                            <label for="sum" class="calculator__placeholder">Сумма вклада</label>
+                        </div>
+                        <div class="calculator__form-field">
+                            <input name="percent" id="percent" type="number" class="calculator__input" placeholder="10"
+                                required>
+                            <span class="help-inline">&nbsp;</span>
+                            <label for="percent" class="calculator__placeholder label__percent">Процентная ставка, %
+                                годовых</label>
+
+                        </div>
+                        <div class="calculator__form-field">
+                            <div class="calculator__form-field__checkBox">
+                                <input type="checkbox" class="calculator__montlyAddDeposit-checkBox"
+                                    id="montlyAddDeposit" name="sumAdd_checked" checked>
+                                <label for="montlyAddDeposit">Ежемесячное
+                                    пополнение вклада</label>
+                            </div>
+                        </div>
+                        <div class="calculator__form-field calculator__sumAdd">
+                            <input name="sumAdd" id="sumAdd" type="number" class="calculator__addAmount" required>
+                            <span class="help-inline">&nbsp;</span>
+                            <label for="sumAdd" class="calculator__placeholder">Сумма пополнения вклада</label>
+
+                        </div>
+                        <div class="calculator__form-field">
+                            <input type="submit" id="btn" class="calculator__form-submit" value="Рассчитать">
+                        </div>
+                    </form>
+                </div>
+                <div class="calculator__form calculator__result">
+                    <div class="calculator__amountPaid"></div>
+                    <hr>
+                    <div class="calculator__amountPaid-title">Сумма к выплате</div>
+                    <div class="calculator__amountPaid-value">250 000</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- embed packages -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
